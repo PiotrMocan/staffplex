@@ -1,0 +1,29 @@
+<div id="navbar">
+  <div id="app-button">
+    <%= link_to "STAFFPLEX", root_path %>
+  </div>
+  <ul>
+    <li>
+      <a href="">Employees</a>
+    </li>
+    <li>
+      <a href="">Time Management</a>
+    </li>
+    <li>
+      <a href="">Talent Acquisition</a>
+    </li>
+    <li>
+      <a href="">Payroll</a>
+    </li>
+    <li>
+      <a href="">Reports</a>
+    </li>
+    <li>
+      <%= link_to "Account", dashboard_index_path %>
+    </li>
+  </ul>
+  <div id="nav-profile">
+    <%= link_to("Logout", destroy_user_session_path, method: :delete)%>
+    <p><%= current_user.email%></p>
+  </div>
+</div>
